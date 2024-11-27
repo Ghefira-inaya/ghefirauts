@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8A8A88;
+    color: #EDE7D6;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-image: url('/uts/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #BCB59C;
+}
+
+.header-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*navbar*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: darkgray;
+    color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: darkgrey;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ff6347;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+/*dropdown menu*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+
+/*sidebar*/
+#profile {
+    padding: 20px;
+    background-color: #E9E7E0;
+    color: beige;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+    background-color: darkgray;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+    /*jam di side bar*/
+.clock-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#clock {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+.fas.fa-clock {
+    font-size: 2em;
+    color: #333;
+}
+
+
+ /*youtube di side bar*/
+.video-container {
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+ /*mp3 di side bar*/
+.audio {
+    width: 100%;
+    margin-top: 20px;
+        }
+/*form*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/*map di side bar*/
+.map-container {
+  width: 100%;
+  height: 400px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/*main body article*/
+.article {
+    flex: 3;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.article h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+.article img{
+  width: 650px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.article p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.read-more-btn {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #006f8a;
+}
+
+.dots {
+  display: inline;
+}
+
+.more {
+  display: none;
+}
+
+/* informsi seputar jenis fashion dan model*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+  background-color: grey;
+}
+.card {
+  background-color: darkgrey;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 10px;
+  padding: 15px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+} 
+
+.card p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+/*FOOTER*/
+
+.footer { 
+  background-color: #333; 
+  color: white; 
+  text-align: center; 
+  padding: 5px; 
+  width: 100%;
+}
+
+.footer p{
+  font-size: 1rem;
+}
